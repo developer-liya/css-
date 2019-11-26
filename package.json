@@ -1,0 +1,23 @@
+{
+  "name": "css-",
+  "version": "1.0.0",
+  "description": "实现css各种效果",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "commit": "git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/developer-liya/css-.git"
+  },
+  "author": "liya <liya341221@163.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/developer-liya/css-/issues"
+  },
+  "homepage": "https://github.com/developer-liya/css-#readme",
+  "dependencies": {
+    "commitizen": "^4.0.3"
+  }
+}
