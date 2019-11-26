@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex布局相关问题</title>
+	<link rel="stylesheet" href="./index.css">
+</head>
+<body>
+	<p class="text">1.flex布局下margin:auto的神奇用法</p>
+	<!-- margin: auto 可以使设置项占据剩余空间 -->
+	<div class="flex-auto">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+	</div>
+
+	<p class="text">2.flex布局，当flex-grow之和小于1时，只能按比例分配部分剩余空间，而不是全部</p>
+	<!-- flex-grow 该属性主要用来定义元素的放大比例，它的默认值是 0。 -->
+	<div class="flex-container">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+	</div>
+</body>
+</html>

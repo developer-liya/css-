@@ -1,0 +1,32 @@
+
+.text{
+	margin-top: 20px;
+	line-height: 30px;
+	font-size: 20px;
+}
+.flex-auto{
+	display: flex;
+	flex-direction: row;
+
+}
+.flex-auto>div{
+	width: 20px;
+	height: 20px;
+	border:  1px solid black;
+	background: #00ffff;
+	margin: auto;
+}
+
+
+.flex-container{
+	display: flex;
+	background-color: grey;
+}
+
+.flex-container>div{
+	width: 20px;
+	height: 20px;
+	border:  1px solid black;
+	background: #00ffff;
+	flex-grow: 0.2
+}
