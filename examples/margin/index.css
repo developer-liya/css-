@@ -1,5 +1,7 @@
-
-/* 负边距的效果。注意左右负边距表现并不一致。左为负时，是左移，右为负时，是左拉。上下与左右类似 */
+.text{
+	line-height: 30px;
+	font-size: 20px;
+}
 .margin-con .left{
 	margin-left: -50px;
 	margin-right: -50px;
@@ -23,4 +25,35 @@
 	padding: 3px;
 	border:  2px dotted black;
 	clear:  both;
+}
+/* 给浮动的父元素或者是 兄弟元素应用 display: flow-root 可以触发BFC, 消除浮动影响，没有副作用 
+但是 兼容性不是很好 可以在 使用优雅降级 @support 支持; */
+
+
+.bfc-container{
+	border:  3px solid black;
+	display: flow-root
+}
+.bfc-container .image{
+	float: left;
+	width: 100px;
+	height: 100px;
+	background-color: #00ffff;
+}
+.bfc-container .body{
+	
+}
+
+
+/* 3.BFC应用之阻止外边距合并 */
+
+.bfc-margin{
+	
+}
+
+.bfc-margin .outer{
+	background-color: #00ffff;
+}
+.bfc-margin .outer .inner{
+	margin-top: 30px;
 }
